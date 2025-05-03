@@ -1,20 +1,22 @@
 Phishing Detection Extension and API (Local XAMPP Setup)
 This project consists of a Chrome browser extension and a Flask API to detect, block, and report phishing URLs using machine learning, configured for a local XAMPP server. When a phishing URL is detected, the webpage is blocked with a red warning message, and a centered popup with a red background appears. Legitimate URLs display a green popup when checked. The popup includes a "Report" button to classify URLs as "Phishing" or "Legitimate."
 Directory Structure
-phishing-detection/
-├── flask-api/               # Directory for model files (created at runtime)
-├── app.py                   # Flask API main file
-├── config.py                # Configuration file
-├── model_training.py        # Model training script
-├── .env                     # Environment variables
-├── README.md                # This file
-└── extension/               # Browser extension files
+
+phishing-detection/   
+├── flask-api/              
+├── app.py                  
+├── config.py              
+├── model_training.py       
+├── .env                    
+├── README.md               
+└── extension/   
+
     ├── manifest.json
     ├── background.js
     ├── content.js
     ├── popup.html
     ├── popup.js
-    ├── styles.css
+    ├── styles.cs
     ├── icon48.png           # Extension icon (48x48)
     ├── icon128.png          # Extension icon (128x128)
 
