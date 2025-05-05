@@ -22,7 +22,7 @@ phishing-detection/
 
 Prerequisites
 
-XAMPP: Installed and running with MySQL (default port 3306).
+XAMPP: Installed and running with MySQL (default port 5000).
 Python: Version 3.8+ installed.
 Google Chrome: Version 88+ recommended for automatic popup functionality.
 Icons: icon48.png (48x48 pixels) and icon128.png (128x128 pixels) in extension/.
