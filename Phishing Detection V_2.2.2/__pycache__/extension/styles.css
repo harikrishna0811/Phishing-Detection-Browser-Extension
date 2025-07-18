@@ -1,0 +1,110 @@
+body {
+    font-family: 'Arial', sans-serif;
+    width: 400px;
+    height: 300px;
+    padding: 12px;
+    margin: 0;
+    background-color: #c5c4c4;
+    overflow: fixed;
+    box-sizing: border-box;
+}
+
+#container {
+    text-align: center;
+    padding: 22px;
+    background: linear-gradient(135deg, #f8f8f8, #f8f8f8);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+#container:hover {
+    transform: translateY(-2px);
+}
+
+h3 {
+    margin: 0 0 16px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1f2937;
+}
+
+p {
+    margin: 8px 0;
+    font-size: 0.95rem;
+    color: #4b5563;
+}
+
+select {
+    margin: 8px 4px;
+    padding: 8px 12px;
+    border: 1px solid #1a4280;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    background-color: #ffffff;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    width: calc(100% - 24px);
+}
+
+select:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+button {
+    margin: 8px 4px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: #3b82f6;
+    color: #ffffff;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+button:hover {
+    background-color: #2563eb;
+    transform: translateY(-1px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+.animate-pulse-slow {
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+
+.tooltip {
+    position: relative;
+}
+
+.tooltip .tooltip-text {
+    visibility: hidden;
+    width: 120px;
+    background-color: #1f2937;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}

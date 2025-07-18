@@ -1,0 +1,22 @@
+CREATE TABLE prediction_logs (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    url TEXT NOT NULL,
+    prediction VARCHAR(20) NOT NULL,
+    response_time FLOAT NOT NULL,
+    timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE report_logs (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    url TEXT NOT NULL,
+    label INT NOT NULL,
+    retraining_time FLOAT,
+    retraining_success BOOLEAN,
+    timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE interaction_logs (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    action VARCHAR(50) NOT NULL,
+    timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Phishing Detection</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container">
+        <h3>Phishing Detection Extension</h3>
+        <p><strong>URL:</strong> <span id="url">Loading...</span></p>
+        <p><strong>Status:</strong> <span id="status">Checking...</span></p>
+        <div>
+            <label for="reportType">Report as:</label>
+            <select id="reportType">
+                <option value="phishing">Phishing</option>
+                <option value="legitimate">Legitimate</option>
+            </select>
+            <button id="reportButton">Report URL</button>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
